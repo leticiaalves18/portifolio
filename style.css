@@ -1,0 +1,215 @@
+/* Define color variables */
+:root {
+  --color-light-background: #f9faff;
+  --color-light-gray: #ccc;
+  --color-dark-background: #1a1a1a;
+  --color-accent: #1db954;
+}
+
+/* Corpo da página */
+body {
+  margin: 0;
+  background-color: #1a1a1a; /* Mudança para fundo escuro */
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Estilo da imagem */
+figure img {
+  width: 100%;
+  max-height: 400px; /* Diminuir o tamanho da imagem */
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+/* Cabeçalho */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 80px; /* Reduzido o padding */
+  height: 56px;
+  background-color: #121212;
+}
+
+.header-left h1 {
+  font-size: 24px; /* Diminui o tamanho do título */
+  color: #fff;
+  font-weight: bold;
+}
+
+.header-right a {
+  padding: 6px 12px;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px; /* Diminui o tamanho da fonte */
+  text-decoration: none;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.header-right a:hover {
+  color: #ccc;
+  transform: scale(1.1);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px; /* Diminui o tamanho da fonte */
+}
+
+/* Seção Sobre */
+.about {
+  padding: 40px 60px; /* Ajusta o padding */
+  max-width: 600px; /* Reduz a largura máxima */
+  background-color: #121212;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.about h2 {
+  font-weight: bold;
+  font-size: 40px; /* Diminui o tamanho da fonte */
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 16px; /* Diminui o tamanho da fonte */
+  line-height: 1.6;
+  color: #828282;
+  margin-bottom: 30px;
+}
+
+.about .buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.primary,
+.secondary {
+  padding: 8px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px; /* Diminui o tamanho da fonte */
+  height: 42px;
+}
+
+.primary {
+  background-color: var(--color-accent);
+  color: white;
+  border: none;
+}
+
+.secondary {
+  background-color: transparent;
+  border: 2px solid var(--color-accent);
+  color: var(--color-accent);
+}
+
+.primary:hover {
+  background-color: #16c60c;
+  transform: rotate(10deg);
+}
+
+.secondary:hover {
+  background-color: var(--color-accent);
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Seção de Projetos */
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px; /* Reduzido o gap */
+  margin-bottom: 100px; /* Ajustado o espaçamento inferior */
+}
+
+.projects h2 {
+  font-size: 32px; /* Diminui o tamanho da fonte */
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.projects h2::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: 2px;
+  background-color: #fff;
+}
+
+/* Cards de Projetos */
+.card {
+  display: flex;
+  background-color: #fff;
+  width: 80%;
+  max-width: 900px; /* Ajusta a largura máxima do card */
+  height: 450px; /* Reduz a altura do card */
+  border-radius: 24px;
+  border: solid 1px #ddd;
+  overflow: hidden;
+}
+
+.card-reverse {
+  flex-direction: row-reverse;
+}
+
+.card-left {
+  flex: 1;
+  padding: 30px;
+  color: #333;
+}
+
+.card-left h3 {
+  font-size: 28px; /* Diminui o tamanho da fonte */
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.card-left p {
+  font-size: 14px; /* Diminui o tamanho da fonte */
+  color: #828282;
+  margin-bottom: 20px;
+}
+
+.card-right {
+  flex: 1;
+  background-color: #f1f1f1;
+}
+
+.card-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Seção de Contato */
+.contact {
+  padding: 40px 60px;
+  background-color: #121212;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 28px; /* Diminui o tamanho da fonte */
+  color: #fff;
+  margin-bottom: 20px;
+}
